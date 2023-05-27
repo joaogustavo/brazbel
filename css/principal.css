@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset da modelo */
+.titulos, .conteudos-navegacao a {
+	display: none;
+	visibility: hidden;
+}
+.corpo {
+	background-image: url(../img/home-conteudos-fundo.jpg) #f8f2ea;
+}
+/* banners */
+.banners {
+	display: block;
+	visibility: visible;
+}
+/* produtos */
+.produtos-container {
+	margin: 0 auto;
+	max-width: 1040px;
+	width: 100%;
+}
+.produtos-cabecalho {
+	display: block;
+	margin-bottom: 48px;
+	max-height: 47px;
+	position: relative;
+	width: 100%;
+}
+.produtos-cabecalho:before {
+	background: url(../img/home-divisao-horizontal-pattern.jpg) repeat-x left top;
+	content: "";
+	height: 3px;
+	left: 194px;
+	position: absolute;
+	top: 25px;
+	width: 74.5%;
+}
+.produtos-titulo {
+	border: solid 2px #275591;
+	color: #275692;
+	display: inline-block;
+	font-family: 'museo_sans900_italic';
+	font-size: 3rem;
+	letter-spacing: -.3rem;
+	max-height: 47px;
+	max-width: 187px;
+	padding: 11px 4px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+.produtos-navegacao {
+	float: right;
+	margin-top: 12px;
+	max-width: 65px;
+	width: 100%;
+}
+.produtos-nav-esq, .produtos-nav-dir {
+	display: inline-block;
+	float: left;
+	height: 30px;
+	width: 30px;
+}
+.produtos-nav-esq {
+	background: url(../img/icone-seta-esquerda.svg) no-repeat left top;
+	float: left;
+}
+.produtos-nav-dir {
+	background: url(../img/icone-seta-direita.svg) no-repeat left top;
+	float: right;
+}
+.produtos {
+	display: block;
+	width: 100%;
+}
+.produto {
+	display: inline-block;
+	float: left;
+	max-width: 450px;
+	position: relative;
+	width: 100%;
+}
+.produto-img {
+	display: block;
+	float: left;
+	margin-right: 25px;
+	max-width: 125px;
+	width: 100%;
+}
+.produto-categoria {
+	color: #275692;
+	font-family: 'museo_sans900_italic';
+	font-size: 2rem;
+	letter-spacing: -.14rem;
+	text-transform: uppercase;
+}
+.produto-nome-container {
+	list-style: none;
+	margin-bottom: 11px;
+	max-width: 380px;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: auto;
+	-webkit-margin-end: auto;
+	-webkit-padding-start: 0;
+	width: 100%;
+}
+.produto-nome {
+	background: #275692;
+	color: #fff;
+	display: inline-block;
+	font-family: 'museo_sans500';
+	font-size: 1.3rem;
+	height: 26px;
+	max-height: 26px;
+	max-width: 118px;
+	text-align: center;
+	width: 100%;
+}
+.produto-link {
+	color: #275692;
+	display: inline-block;
+	font-family: 'museo_sans500';
+	font-size: 1.5rem;
+	text-decoration: none;
+}
+@media screen and (max-width: 1090px) {
+.produtos-cabecalho {
+	margin-bottom: 15px;
+}
+.produtos-cabecalho:before {
+	width: calc(100% - 265px);
+}
+}
+@media screen and (max-width: 954px) {
+.produtos {
+	text-align: center;
+}
+.produto {
+	float: none;
+	margin: 15px auto;
+	text-align: left;
+}
+}
+@media screen and (max-width: 767px) {
+.corpo {
+	margin-top: 72px;
+}
+.produto-nome {
+	margin: 2px auto;
+}
+}
+@media screen and (max-width: 475px) {
+.produto {
+	border: solid 1px #D7D7D7;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	padding: 15px 6px;
+}
+.produto-img, .produto-categoria, .produto-nome-container, .produto-nome, .produto-link {
+	display: block;
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+}
+.produto-nome {
+	display: block;
+	margin: 2px auto;
+}
+.produto-categoria {
+	font-size: 1.6rem;
+}
+}
